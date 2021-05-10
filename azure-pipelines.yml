@@ -9,7 +9,6 @@ trigger:
 pool:
   vmImage: windows-latest
 
-
 steps:
 - task: UsePythonVersion@0
   inputs:
@@ -18,11 +17,6 @@ steps:
 - script: |
     python -m pip install --upgrade pip
   displayName: 'Install dependencies'
-
-- script: |
-    pip install pytest pytest-azurepipelines
-    pytest
-  displayName: 'pytest'
 
 - script: |
     python test.py
