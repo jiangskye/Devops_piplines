@@ -28,7 +28,4 @@ steps:
       print('Hello world 1')
       print('Hello world 2')
 
-- script: |
-    python -m pip install flake8
-    flake8 .
-  displayName: 'Run lint tests flake8'
+ 
